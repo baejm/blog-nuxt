@@ -31,28 +31,28 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn
-        @click.stop="miniVariant = !miniVariant"
         icon
+        @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
       <v-btn
-        @click.stop="clipped = !clipped"
         icon
+        @click.stop="clipped = !clipped"
       >
         <v-icon>mdi-application</v-icon>
       </v-btn>
       <v-btn
-        @click.stop="fixed = !fixed"
         icon
+        @click.stop="fixed = !fixed"
       >
         <v-icon>mdi-minus</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-btn
-        @click.stop="rightDrawer = !rightDrawer"
         icon
+        @click.stop="rightDrawer = !rightDrawer"
       >
         <v-icon>mdi-menu</v-icon>
       </v-btn>
@@ -81,7 +81,7 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2019</span>
+      <span>&copy; 2021</span>
     </v-footer>
   </v-app>
 </template>
@@ -96,19 +96,19 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+          title: '목록',
+          to: '/list'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: '글쓰기',
+          to: '/write'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: '나만 쓰는 블로그'
     }
   }
 }
