@@ -1,20 +1,21 @@
-# nuxt-blog
+# blog
 
-## Build Setup
+> Nuxt &amp; Firebase blog
 
-```bash
-# install dependencies
-$ npm install
+# Installation
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## 파이어베이스 설정파일 루트에 만들 것
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+**firebaseConfig.js**  
+```javascript
+export default {
+  apiKey: 'AIzaSyDxvJZL2TJsYe7iiN823DYu2OQKnzqLVLM',
+  authDomain: 'memi-blog-test.firebaseapp.com',
+  databaseURL: 'https://memi-blog-test.firebaseio.com',
+  projectId: 'memi-blog-test',
+  storageBucket: 'memi-blog-test.appspot.com',
+  messagingSenderId: '610055424265',
+  appId: '1:610055424265:web:3e636e0ae6c28c77762bd8'
+}
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
