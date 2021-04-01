@@ -1,8 +1,8 @@
-# blog
+## blog
 ```
 > Nuxt &amp; Firebase blog
 ```
-# Installation
+## Installation
 ```
  - vuetify
  - firebase
